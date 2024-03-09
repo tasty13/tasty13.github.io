@@ -25,7 +25,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: tasty.log
-email: your-email@domain.com
+email: bodri0625@gmail.com
 author: tasty
 
 # Copyright setting
@@ -40,7 +40,7 @@ author: tasty
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
+copyright: "Unpublished Work (cleft) 2017-2024 tasty"
 
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -73,7 +73,7 @@ yat:
 # sitemap: false
 
 # If you want to change site language, you can set lang option
-# lang: "en"  # default lang is en
+lang: ko-KR  # default lang is en  
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
@@ -140,7 +140,7 @@ yat:
 # it will be always kept on every visit (i.e. no matter
 # the browser is closed or not)
 #
-# night_mode: "auto"
+# night_mode: "dark"
 
 # Code badge setting
 # You can enable or disable the code badge and so on
@@ -152,19 +152,19 @@ yat:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
-#   - index.html
-#   - archives.html
-#   - categories.html
-#   - tags.html
-#   - about.md
+header_pages:
+  - index.html
+# - archives.html
+  - categories.html
+# - tags.html
+  - about.markdown
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+defaults:
+  home: 
+    heading: "아무튼그렇게됐다"
+    subheading: "얼렁뚱땅 코딩블로그"
+    banner: "https://pixabay.com/get/g86e2d575207cb8c2e3299e5887c1a102d0daff7e2872fa6de3f25632ff21a001e0ce329731c1ff3cdba3566db41431ce.jpg"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
@@ -191,7 +191,7 @@ yat:
 #   text_size: 350          # Words default size
 
 # Pagination setting
-# paginate: 5
+paginate: 5
 
 # Photo previewer settings (PhotoSwipe 5)
 # the options please refer to: https://photoswipe.com/options/
@@ -220,7 +220,7 @@ yat:
 
 # Gitment comments
 # gitment:
-#   username: "Your GitHub username"
+#   username: "tasty13"
 #   repo: "The repo to store comments"
 #   client_id: "Your client ID"
 #   client_secret: "Your client secret"
