@@ -42,10 +42,12 @@ author: tasty
 #
 copyright: "Unpublished Work (cleft) 2017-2024 tasty"
 
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+# description: 
+
+# this means to ignore newlines until "baseurl:"
+# Write an awesome description for your new site here. You can edit this
+# line in _config.yml. It will appear in your document head meta (for
+# Google search results) and in your feed.xml site description.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. https://example.com
@@ -162,9 +164,9 @@ header_pages:
 # Page default value
 defaults:
   home: 
-    heading: "아무튼그렇게됐다"
-    subheading: "얼렁뚱땅 코딩블로그"
-    banner: "https://pixabay.com/get/g86e2d575207cb8c2e3299e5887c1a102d0daff7e2872fa6de3f25632ff21a001e0ce329731c1ff3cdba3566db41431ce.jpg"
+    heading: "이거 왜 되는거야"
+    subheading: "아무튼그렇게됐다"
+    banner: "assets/images/banners/bookandcoffee.jpg"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
