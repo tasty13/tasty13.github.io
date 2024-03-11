@@ -167,6 +167,18 @@ defaults:
     heading: "이거 왜 되는거야"
     subheading: "아무튼그렇게됐다"
     banner: "assets/images/banners/bookandcoffee.jpg"
+  # - scope:
+  #     path: ""
+  #     type: posts
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     read_time: true
+  #     comments: true
+  #     share: true
+  #     related: true
+  #     mathjax: true
+  #     sidebar_main: true
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also

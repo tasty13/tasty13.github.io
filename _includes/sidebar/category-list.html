@@ -1,9 +1,59 @@
 {%- include functions.html func='log' level='debug' msg='Get categories value' -%}
+{%- include functions.html func='get_categories' -%}    <!-- 카테고리 목록 반환 -->
+{% assign categories = return %}    <!-- 반환된 카테고리 목록을 categories 변수에 할당 -->
 
-{%- include functions.html func='get_categories' -%}
-{% assign categories = return %}
-
-{% assign keys = categories %}
-{% assign field = 'categories' %}
+{% assign keys = categories %}  <!-- categories 변수의 값(카테고리 목록)을 keys 변수에 할당 -->
+{% assign field = 'categories' %}   <!-- field 변수에 'categories' 값을 할당 -->
 {% assign url = '/categories.html' | relative_url %}
+<!-- 'categories.html' 페이지의 URL을 url 변수에 할당, relative_url 필터를 사용해 상대 경로 지정 -->
 {% include sidebar/common-list.html %}
+<!-- sidebar/common-list.html 파일을 include하여 카테고리 목록을 표시 -->
+
+<!-- 
+{% for category in categories %}
+    {{ category }}
+{% endfor %}
+-->
+
+
+<!-- 
+    {%- assign categories = {
+    "BigTitle": "My Big Title",
+    "Categories": [
+        {"name": "Category 1", "url": "/study"},
+        {"name": "Category 2", "url": "/category-2"},
+        {"name": "Category 3", "url": "/category-3"}
+    ]
+} -%}
+{% assign return = categories %} 
+-->
+
+
+<!--
+
+{% if page.author_profile or layout.author_profile or page.sidebar %}   -- 페이지에 작성자 프로필 있는지 확인
+<div class="sidebar sticky">
+    {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}   -- 레이아웃에 작성자 프로필이 있는지 확인
+    {% if page.sidebar %}   -- page.sidebar: 페이지에 사이드바가 있는지 확인
+        {% for s in page.sidebar %}
+            {% if s.image %}
+                <img src="{{ s.image | relative_url }}"
+                    alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+            {% endif %}
+            {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
+            {% if s.text %}{{ s.text | markdownify }}{% endif %}
+            {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
+        {% endfor %}
+        {% if page.sidebar.nav %}
+            {% include nav_list nav=page.sidebar.nav %}
+        {% endif %}
+    {% endif %}
+
+    {% if page.sidebar_main %} -- page.sidebar_main이 정의되어 있다면 
+                                    nav_list_main을 include하여 메인 사이드바 내비게이션 목록을 출력
+        {% include nav_list_main %}
+    {% endif %}
+
+    </div>
+{% endif %}
+-->
