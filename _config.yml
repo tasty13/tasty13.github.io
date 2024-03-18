@@ -23,13 +23,10 @@ description: # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://tasty13.github.io"
 
 github:
   username: tasty13 # change to your github username
-
-twitter:
-  username: twitter_username # change to your twitter username
 
 social:
   # Change to your full name.
@@ -38,7 +35,6 @@ social:
   email: bodri0625@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
     - https://github.com/tasty13 # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -66,7 +62,7 @@ goatcounter:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: # [light | dark]
+theme_mode: [light | dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
