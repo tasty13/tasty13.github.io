@@ -23,7 +23,7 @@ description: # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://tasty13.github.io"
+url: 'https://tasty13.github.io'
 
 github:
   username: tasty13 # change to your github username
@@ -62,7 +62,7 @@ goatcounter:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: [light | dark]
+theme_mode: light
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
@@ -122,7 +122,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl: "https://tasty13.github.io"
 
 # ------------ The following options are not recommended to be modified ------------------
 
