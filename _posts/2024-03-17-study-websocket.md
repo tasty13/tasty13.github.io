@@ -2,7 +2,7 @@
 layout: post
 title: 웹소켓이란?
 subtitle: websocket, stomp
-categories: study-web
+categories: [Study, Web]
 ---
 
 ## 들어가기 전에
@@ -30,6 +30,7 @@ categories: study-web
 
 ## HTTP
 ### HTTP
+: TCP 기반으로 만들어진 프로토콜
 : 클라이언트와 웹 브라우저가 서버에 웹 서비스를 요청하면 서버가 적절한 응답을 하여 클라이언트의 사용자에게 웹 페이지를 제공하는 서비스<br/>
 -> 서버와 클라이언트 간 하이퍼텍스트 문서를 송수신하는 프로토콜
 - 동작 과정
