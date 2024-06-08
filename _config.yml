@@ -85,7 +85,7 @@ theme_mode: light
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "/assets/img/banner/bookandcoffee-1-1-200.jpg"
+img_cdn: ""
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "/assets/img/banner/bookandcoffee-1-1-200.jpg"
